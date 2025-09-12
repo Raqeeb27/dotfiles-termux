@@ -30,12 +30,19 @@ apt install git stow rsync -y
 ---
 
 ## 🚀 Initial Setup  
-### Clone and Backup Your Existing Configs
+### Clone the Repository
 
-This step makes a backup of your existing configuration so you can restore it later if needed:
+First, clone the dotfiles repository to your Termux home directory:
 
 ```bash
 git clone https://github.com/Raqeeb27/dotfiles-termux.git ~/dotfiles-termux
+```
+
+### Backup and Apply New Dotfiles
+
+This step backs up your existing configuration and applies the new dotfiles from this repository. You can restore your previous setup later if needed:
+
+```bash
 cd ~/dotfiles-termux
 git switch -c adopt-backup
 stow --adopt -t ~ .
