@@ -38,7 +38,7 @@ This step makes a backup of your existing configuration so you can restore it la
 git clone https://github.com/Raqeeb27/dotfiles-termux.git ~/dotfiles-termux
 cd ~/dotfiles-termux
 git switch -c adopt-backup
-stow --adopt -t ~ ~/dotfiles-termux
+stow --adopt -t ~ .
 git add -A
 git commit -m "chore: Backup existing configs"
 git switch main
@@ -57,7 +57,7 @@ If you are happy with the new configuration and want to make it your default
 
 ```bash
 cd ~/dotfiles-termux
-stow -D -t ~ ~/dotfiles-termux
+stow -D -t ~ .
 rm -rf ~/dotfiles-termux/.git
 rsync -av ~/dotfiles-termux/ ~
 cd ~
@@ -69,7 +69,7 @@ Not a fan? No problem - you can roll back to your previous setup:
 
 ```bash
 cd ~/dotfiles-termux
-stow -D -t ~ ~/dotfiles-termux
+stow -D -t ~ .
 git switch adopt-backup
 rm -rf ~/dotfiles-termux/.git
 rsync -av ~/dotfiles-termux/ ~
