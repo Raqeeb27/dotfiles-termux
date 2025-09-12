@@ -55,12 +55,12 @@ git restore .
 ---
 
 ## 🤩 User Interest
-> 💡Run these steps only after completing the Initial Setup section.
+> 💡 Run these steps only after completing the Initial Setup section.
 
 ### Install dotfiles permanently
-> ⚠️Caution: Your previous configuration is lost after this step.
+> ⚠️ Caution: Your previous configuration will be lost after this step.
 
-If you are happy with the new configuration and want to make it your default
+If you are happy with the new configuration and want to make it your default:
 
 ```bash
 cd ~/dotfiles-termux
@@ -72,7 +72,7 @@ rm -rf ~/dotfiles-termux
 ```
 
 ### Restore your previous configuration
-Not a fan? No problem - you can roll back to your previous setup:
+Not a fan? No problem — you can roll back to your previous setup:
 
 ```bash
 cd ~/dotfiles-termux
