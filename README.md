@@ -65,7 +65,7 @@ If you are happy with the new configuration and want to make it your default
 ```bash
 cd ~/dotfiles-termux
 stow -D -t ~ .
-rm -rf ~/dotfiles-termux/.git
+rm -rf ~/dotfiles-termux/.git ~/dotfiles-termux/README.md
 rsync -av ~/dotfiles-termux/ ~
 cd ~
 rm -rf ~/dotfiles-termux
@@ -78,7 +78,7 @@ Not a fan? No problem - you can roll back to your previous setup:
 cd ~/dotfiles-termux
 stow -D -t ~ .
 git switch adopt-backup
-rm -rf ~/dotfiles-termux/.git
+rm -rf ~/dotfiles-termux/.git ~/dotfiles-termux/README.md
 rsync -av ~/dotfiles-termux/ ~
 cd ~
 rm -rf ~/dotfiles-termux
