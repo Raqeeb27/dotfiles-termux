@@ -1,4 +1,5 @@
-# dotfiles-termux
+# <span style="vertical-align: middle;"><img src='assets/Readme-Images/Termux_Logo.png' alt="Termux_Logo" style="width:60px;height:auto; margin-bottom: -3px;"> dotfiles-termux</span>
+
 ### Configuration files and setup scripts for Termux.
 A quick way to set up your Termux environment with custom dotfiles, aliases, and useful settings.
 
